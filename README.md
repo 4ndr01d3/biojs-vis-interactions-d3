@@ -10,27 +10,6 @@
 ## Getting Started
 Install the module with: `npm install biojs-vis-interactions-d3`
 
-```javascript
-var biojsvisinteractionsd3 = require('biojs-vis-interactions-d3');
-biojsvisinteractionsd3.hello("biojs"); // "hello biojs"
-```
-
-## Documentation
-
-#### .hello(name)
-
-**Parameter**: `name`
-**Type**: `String`
-**Example**: `biojs`
-
-The 'hello' method is responsible for showing a name.
-
-How to use this method
-
-```javascript
-biojsvisinteractionsd3.hello('biojs'); // "hello biojs"
-```
-
 ## Contributing
 
 Please submit all issues and pull requests to the [4ndr01d3/biojs-vis-interactions-d3](http://github.com/4ndr01d3/biojs-vis-interactions-d3) repository!
