@@ -1,0 +1,113 @@
+[
+/**
+ * @name Biojs.InteractionsD3#proteinClick
+ * @event
+ * @param {function} actionPerformed It is triggered when the user clicks on a protein
+ * @eventData {@link Biojs.Event} objEvent Object containing the information of the event
+ * @eventData {Object} objEvent.source The component which did triggered the event.
+ * @eventData {Object} objEvent.protein the information of the protein that has been clicked.
+ * @example 
+ * instance.proteinClick(
+ *    function( objEvent ) {
+ *       alert("The protein " + objEvent.protein.id + " was clicked.");
+ *    }
+ * ); 
+ * 
+ * */
+"proteinClick",
+/**
+ * @name Biojs.InteractionsD3#proteinMouseOver
+ * @event
+ * @param {function} actionPerformed It is triggered when the mouse pointer is over a protein
+ * @eventData {@link Biojs.Event} objEvent Object containing the information of the event
+ * @eventData {Object} objEvent.source The component which did triggered the event.
+ * @eventData {Object} objEvent.protein the information of the protein that has been mouseover.
+ * @example 
+ * instance.proteinMouseOver(
+ *    function( objEvent ) {
+ *       alert("The mouse is over the protein " + objEvent.protein.id);
+ *    }
+ * ); 
+ * 
+ * */
+"proteinMouseOver",
+/**
+ * @name Biojs.InteractionsD3#proteinMouseOut
+ * @event
+ * @param {function} actionPerformed It is triggered when the mouse pointer leave the area of a protein
+ * @eventData {@link Biojs.Event} objEvent Object containing the information of the event
+ * @eventData {Object} objEvent.source The component which did triggered the event.
+ * @eventData {Object} objEvent.protein the information of the protein that has been mouseout.
+ * @example 
+ * instance.proteinMouseOut(
+ *    function( objEvent ) {
+ *       alert("The mouse is out the protein " + objEvent.protein.id);
+ *    }
+ * ); 
+ * 
+ * */
+"proteinMouseOut",
+/**
+ * @name Biojs.InteractionsD3#interactionClick
+ * @event
+ * @param {function} actionPerformed A function which receives an {@link Biojs.Event} object as argument.
+ * @eventData {Object} source The component which did triggered the event.
+ * @eventData {Object} interaction the information of the interaction that has been clicked.
+ * @example 
+ * instance.interactionClick(
+ *    function( objEvent ) {
+ *       alert("Click on the interaction " + objEvent.interaction.source.id +" - "+ objEvent.interaction.target.id);
+ *    }
+ * ); 
+ * 
+ * */
+"interactionClick",
+/**
+ * @name Biojs.InteractionsD3#interactionMouseOver
+ * @event
+ * @param {function} actionPerformed A function which receives an {@link Biojs.Event} object as argument.
+ * @eventData {Object} source The component which did triggered the event.
+ * @eventData {Object} interaction the information of the interaction that has been mouseover.
+ * @example 
+ * instance.interactionMouseOver(
+ *    function( objEvent ) {
+ *       alert("The mouse is over the interaction " + objEvent.interaction.source.id +" - "+ objEvent.interaction.target.id);
+ *    }
+ * ); 
+ * 
+ * */
+"interactionMouseOver",
+/**
+ * @name Biojs.InteractionsD3#interactionMouseOut
+ * @event
+ * @param {function} actionPerformed It is triggered when the mouse pointer leave an interaction
+ * @eventData {@link Biojs.Event} objEvent Object containing the information of the event
+ * @eventData {Object} source The component which did triggered the event.
+ * @eventData {Object} interaction the information of the interaction that has been mouseout.
+ * @example 
+ * instance.interactionMouseOut(
+ *    function( objEvent ) {
+ *      alert("The mouse is out of the interaction " + objEvent.interaction.source.id +" - "+ objEvent.interaction.target.id);
+ *    }
+ * ); 
+ * 
+ * */
+"interactionMouseOut",
+/**
+ * @name Biojs.InteractionsD3#sizeChanged
+ * @event
+ * @param {function} actionPerformed It is triggered when the size of the SVG element has been changed. 
+ * @eventData {@link Biojs.Event} objEvent Object containing the information of the event
+ * @eventData {Object} source The component which did triggered the event.
+ * @eventData {Object} width The width of the new size
+ * @eventData {Object} height The height of the new size
+ * @example 
+ * instance.sizeChanged(
+ *    function( objEvent ) {
+ *      alert("The size has changed: ("+objEvent.width+","+objEvent.height+")" );
+ *    }
+ * ); 
+ * 
+ * */
+"sizeChanged"
+]
